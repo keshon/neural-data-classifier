@@ -1,0 +1,23 @@
+{
+  "name": "js-ai-test-02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/papaparse": "^5.3.7",
+    "brain.js": "^2.0.0-beta.23",
+    "csv-parse": "^5.4.0",
+    "minimist": "^1.2.8",
+    "papaparse": "^5.4.1",
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "@types/minimist": "^1.2.2",
+    "@types/node": "^20.4.3"
+  }
+}
