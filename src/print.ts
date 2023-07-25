@@ -12,7 +12,7 @@ export function PrintPredictResults(
         console.log("Label:", result.label);
         console.log("Features:", result.features.join(", "));
         console.log("------------------------");
-        console.log("Predicted Features:");
+        console.log("Predicted Labels:");
         console.log("------------------------");
 
         // Find the maximum length of the feature names for padding

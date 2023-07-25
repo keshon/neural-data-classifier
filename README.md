@@ -8,11 +8,11 @@ The project includes a /doc folder, where you can find individual markdown files
 
 ## Features
 
-- Loading and preprocessing datasets from CSV files.
-- Formatting datasets to a common feature-label map for training and testing.
-- Training a neural network using Brain.js with configurable options.
-- Testing the trained model with new data and obtaining prediction results.
-- Outputting prediction results in a human-readable format.
+-   Loading and preprocessing datasets from CSV files.
+-   Formatting datasets to a common feature-label map for training and testing.
+-   Training a neural network using Brain.js with configurable options.
+-   Testing the trained model with new data and obtaining prediction results.
+-   Outputting prediction results in a human-readable format.
 
 ## Datasets
 
@@ -49,6 +49,7 @@ run --train --dataset=<dataset_number>
 Replace `<dataset_number>` with the dataset number you want to use for training (e.g., `01` or `02` - correspoding subfolders inside `/datasets`). The trained model and other intermediate files will be saved in the `/trained` directory.
 
 Example of training output:
+
 ```
 run --train --dataset=01
 iterations: 100, training error: 0.005161096035617374
@@ -76,13 +77,14 @@ run --test --dataset=<dataset_number>
 Replace `<dataset_number>` with the dataset number you want to use for testing (e.g., "01" or "02"). The testing results will be displayed in the terminal.
 
 Example of testing output:
+
 ```
 run --test --dataset=01
 ========================
 Label: carcinoma breast
 Features: mass in breast, mass of body structure, paresthesia, retropulsion, erythema, difficulty, lesion, estrogen use, burning sensation, dyspnea, swelling, formication
 ------------------------
-Predicted Features:
+Predicted Labels:
 ------------------------
 carcinoma breast            : 0.5013131 - 47.47%
 malignant neoplasm of breast: 0.4962638 - 46.99%
@@ -97,7 +99,7 @@ melanoma                    : 0.0019802 - 0.19%
 Label: hepatitis B
 Features: inappropriate affect, tachypnea, yellow sputum, projectile vomiting, poor feeding, pain abdominal, abdominal tenderness, wheelchair bound, moan
 ------------------------
-Predicted Features:
+Predicted Labels:
 ------------------------
 hepatitis B   : 0.9908005 - 95.07%
 cholelithiasis: 0.0347123 - 3.33%
@@ -107,11 +109,15 @@ kidney disease:
 ========================
 ```
 
+### How to read it
+
+`Label` in the example is a name of the disease and `Features` are complete list of symptoms of that disease - it's our reference. By submitting this list (Features) to a trained model we expect to predict the very same Label that should match the reference one.
+
 ## Credits
 
 This project utilizes the following libraries:
 
-- [Brain.js](https://github.com/BrainJS/brain.js) - A JavaScript library for building and training neural networks.
+-   [Brain.js](https://github.com/BrainJS/brain.js) - A JavaScript library for building and training neural networks.
 
 ## License
 
