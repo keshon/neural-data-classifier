@@ -6,4 +6,4 @@ if not exist .\node_modules\.bin\ts-node (
     exit /b 1
 )
 
-.\node_modules\.bin\ts-node src\_main.ts %*
+.\node_modules\.bin\ts-node src\__main__.ts %*

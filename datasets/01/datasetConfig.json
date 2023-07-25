@@ -1,0 +1,8 @@
+{
+    "label": "Condition",
+    "labelType": "string",
+    "attributeDir": "vertical",
+    "attributeMap": {
+        "Symptom": "Symptom"
+    }
+}
